@@ -18,9 +18,9 @@ const BackgroundCircles = () => {
     >
       <div className="absolute border border-[#333333] rounded-full h-[200px] w-[200px] mt-52 animate-ping" />
       <div className="absolute border border-[#333333] rounded-full h-[300px] w-[300px] mt-52 animate-ping" />
-      <div className="absolute border border-[#333333] rounded-full h-[500px] w-[500px] mt-52 animate-ping" />
-      <div className="rounded-full border border-[#F7AB0A] opacity-20 h-[650px] w-[650px] mt-52 animate-pulse absolute" />
-      <div className="rounded-full border border-[#333333] h-[800px] w-[800px] mt-52 absolute" />
+      <div className="absolute border border-[#333333] rounded-full h-[500px] w-[500px] sm:h-[400px] sm:w-[400px] mt-52 animate-ping" />
+      <div className="rounded-full border border-[#F7AB0A] opacity-20 h-[300px] w-[300px] lg:h-[650px] lg:w-[650px] sm:h-[300px] sm:w-[300px] mt-52 animate-pulse absolute" />
+      <div className="rounded-full border border-[#333333] h-[400px] w-[400px] lg:h-[800px] lg:w-[800px] sm:h-[400px] sm:w-[400px]  mt-52 absolute" />
     </motion.div>
   );
 };

@@ -30,15 +30,17 @@ const About = () => {
         whileInView={{ x: 0, opacity: 1 }}
         // viewport={{ once: true }}
         src={urlFor(state.pageInfo?.profilePic).url()}
-        className="mt-30 sm:mt-20 mb-10 sm:mb-20 md:mb-0 flex-shrink-0 w-36 h-36 sm:w-56 sm:h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-64 xl:w-[400px] xl:h-[500px]"
+        className="mt-20 sm:mt-10 md:mt-30 mb-10 sm:mb-20 md:mb-0 flex-shrink-0 w-36 h-36 sm:w-56 sm:h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-64 xl:w-[400px] xl:h-[500px]"
       />
-      <div className="space-y-2 sm:space-y-10 px-0 md:px-10">
-        <h4 className="text-2xl sm:text-4xl font-semibold">
+      <div className="space-y-2 sm:space-y-5 md:space-y-10 px-0 md:px-10">
+        <h4 className="text-2xl sm:text-3xl lg:text-4xl font-semibold">
           Here is a{" "}
           <span className="underline decoration-[#F7AB0A]/50">little</span>{" "}
           background
         </h4>
-        <p className="text-base ">{state.pageInfo?.backgroundInformation}</p>
+        <p className="text-base text-sm  sm:text-lg lg:text-xl">
+          {state.pageInfo?.backgroundInformation}
+        </p>
       </div>
     </motion.div>
   );

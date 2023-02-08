@@ -19,7 +19,7 @@ const Header = () => {
     }
   };
   return (
-    <header className="sticky top-0 flex items-start justify-between max-w-7xl mx-auto z-20 p-5 xl:items-center">
+    <header className="sticky top-0 flex items-start justify-between max-w-7xl mx-auto z-20 p-0 py-3 sm:p-5 xl:items-center">
       <motion.div
         initial={{
           x: -500,
@@ -43,6 +43,7 @@ const Header = () => {
             fgColor="gray"
             bgColor="transparent"
             target="_blank"
+            className="cursor-pointer h-10 w-10 sm:h-16 sm:w-16"
           />
         ))}
         <a
@@ -80,12 +81,12 @@ const Header = () => {
         transition={{
           duration: 1.5,
         }}
-        className="flex flex-row items-center text-gray-300 cursor-pointer"
+        className="flex flex-row items-center text-gray-300 cursor-pointer "
         onClick={() => scrollin("contact")}
       >
         <SocialIcon
           network="email"
-          className="cursor-pointer"
+          className="cursor-pointer h-10 w-10 sm:h-16 sm:w-16"
           fgColor="gray"
           bgColor="transparent"
         />
